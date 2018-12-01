@@ -45,7 +45,7 @@ Image debian/stretch-slim is used as a base.
 
 ## Authors
 
-- [**Jan Škola**]((https://github.com/janskola)) - *Initial work*
+- [**Jan Škola**](https://github.com/janskola) - *Initial work*
 
 ## License
 
