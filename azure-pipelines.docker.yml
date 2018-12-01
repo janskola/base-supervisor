@@ -8,7 +8,7 @@ pool:
 
 variables:
   imageName: 'base-supervisor'
-  imageFullName: '$(dockerId)/$(imageName):$(build.buildId)'
+  imageFullName: '$(dockerId)/$(imageName)'
 
 steps:
 - script: |
