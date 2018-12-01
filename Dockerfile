@@ -21,7 +21,7 @@ RUN apt-get update && \
 COPY rootfs/ /
 
 # Base data volume and logging volume
-VOLUME ["/var/log/supervisor"]
+VOLUME ["/var/log"]
 
 # Container starup command to run supervisor
 CMD ["/usr/bin/supervisord", "--configuration=/etc/supervisor/supervisord.conf"]

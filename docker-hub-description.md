@@ -22,7 +22,7 @@ This image is intended as a base for other containers, where is useful to have s
 
 #### Volumes
 
-- `/var/log/supervisor` - Log files from supervisor daemon
+- `/var/log` - Log files provided by rsyslog
 
 #### Useful File Locations
 
