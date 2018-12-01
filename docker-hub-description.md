@@ -39,13 +39,13 @@ Image debian/stretch-slim is used as a base.
 
 [![Build Status](https://dev.azure.com/docker-jsk/public/_apis/build/status/base-supervisor)](https://dev.azure.com/docker-jsk/public/_build/latest?definitionId=1)
 
-## Find Us
+## Source repository
 
 - [github.com/janskola/base-supervisor](https://github.com/janskola/base-supervisor)
 
 ## Authors
 
-- **Jan Škola** - *Initial work* - [JanSkola](https://github.com/janskola)
+- [**Jan Škola**]((https://github.com/janskola)) - *Initial work*
 
 ## License
 
