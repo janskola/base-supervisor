@@ -7,8 +7,6 @@ pool:
   vmImage: 'Ubuntu 16.04'
 
 variables:
-  dockerId: 'janskola'
-  dockerPassword: 'VL%YOc1P@s#c'
   imageName: '$(dockerId)/base-supervisor:$(build.buildId)'
 
 steps:
