@@ -8,10 +8,10 @@ pool:
 
 variables:
   imageName: 'base-supervisor'
-  imageFullName: '$(dockerId)/$(imageName)'
+  imageFullName: '$(dockerUsername)/$(imageName)'
 
 steps:
 - script: |
     docker build -f Dockerfile -t $(imageFullName) .
-    docker login -u $(dockerId) -p $(dockerPassword)
-    docker push $(dockerId)/$(imageName)
+    docker login -u $(dockerUsername) -p $(dockerPassword)
+    docker push $(dockerUsername)/$(imageName)
