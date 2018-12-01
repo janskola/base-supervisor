@@ -1,0 +1,17 @@
+/var/log/mail.info
+/var/log/mail.warn
+/var/log/mail.err
+/var/log/mail.log
+{
+	rotate 8
+	weekly
+	missingok
+	notifempty
+	compress
+	dateext
+	delaycompress
+	sharedscripts
+	postrotate
+		invoke-rc.d --quiet rsyslog rotate > /dev/null
+	endscript
+}
