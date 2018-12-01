@@ -11,9 +11,7 @@ variables:
   imageFullName: '$(dockerId)/$(imageName):$(build.buildId)'
 
 steps:
-- script: docker build -f Dockerfile -t $(imageFullName) .
-    displayName: 'docker build'
-- script: docker login -u $(dockerId) -p $(dockerPassword)
-    displayName: 'docker login'
-- script: docker push $(dockerId)/$(imageName)
-    displayName: 'docker push'
+- script: |
+    docker build -f Dockerfile -t $(imageFullName) .
+    docker login -u $(dockerId) -p $(dockerPassword)
+    docker push $(dockerId)/$(imageName)
